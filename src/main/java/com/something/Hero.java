@@ -1,8 +1,13 @@
 package com.something;
 
 public class Hero {
-    String name;
-
+    private String name;
+    public Hero(String name) {
+        this.name = name;
+    }
+    public Hero() {
+        this.name = "Link";
+    }
     public String getName() {
         return name;
     }
