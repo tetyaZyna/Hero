@@ -2,13 +2,10 @@ package com.something;
 
 public class Hero {
     public String name;
+    private int damage = 5;
 
     public Hero(String name) {
         this.name = name;
-    }
-
-    public Hero() {
-        this.name = "Link";
     }
 
     public String getName() {
@@ -17,6 +14,8 @@ public class Hero {
 
     public void attackEnemy(){
         System.out.println("Герой " + name + " атакував");
+        Enemy.takeDamage(damage);
+        System.out.println(Enemy.getHealth());
     }
 
 }
