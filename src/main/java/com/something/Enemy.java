@@ -4,16 +4,16 @@ public class Enemy {
     private static int health;
 
     public Enemy(int health) {
-        this.health = health;
-    }
+        Enemy.health = health;
+    }//IDE предлагает использовать Enemy вместо this
 
     public static int getHealth() {
         return health;
     }
 
     public void setHealth(int health) {
-        this.health = health;
-    }
+        Enemy.health = health;
+    }//IDE предлагает использовать Enemy вместо this (зачем использовать сеттер)
 
     public static int takeDamage(int damage){
         health = health - damage;

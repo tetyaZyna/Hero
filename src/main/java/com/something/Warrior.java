@@ -1,7 +1,7 @@
 package com.something;
 
 public class Warrior extends Hero{
-    private int damage = 50;
+    private final int damage = 50;
     public Warrior(String name) {
         super(name);
     }
@@ -9,6 +9,6 @@ public class Warrior extends Hero{
     public void attackEnemy(){
         System.out.println("Мечник " + name + " атакував");
         Enemy.takeDamage(damage);
-        System.out.println(Enemy.getHealth());
+        System.out.println("У ворога залишилось " + Enemy.getHealth() + "HP");
     }
 }

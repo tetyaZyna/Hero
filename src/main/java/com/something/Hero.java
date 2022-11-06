@@ -1,8 +1,7 @@
 package com.something;
 
-public class Hero {
+abstract class Hero {
     public String name;
-    private int damage = 5;
 
     public Hero(String name) {
         this.name = name;
@@ -10,12 +9,8 @@ public class Hero {
 
     public String getName() {
         return name;
-    }
+    }//Зачем сеттер
 
-    public void attackEnemy(){
-        System.out.println("Герой " + name + " атакував");
-        Enemy.takeDamage(damage);
-        System.out.println(Enemy.getHealth());
-    }
+    public abstract void attackEnemy();
 
 }

@@ -1,7 +1,7 @@
 package com.something;
 
 public class Mage extends Hero{
-    private int damage = 30;
+    private final int damage = 30;
     public Mage(String name) {
         super(name);
     }
@@ -9,7 +9,7 @@ public class Mage extends Hero{
     public void attackEnemy(){
         System.out.println("Маг " + name + " кастонув фаєрбол");
         Enemy.takeDamage(damage);
-        System.out.println(Enemy.getHealth());
+        System.out.println("У ворога залишилось " + Enemy.getHealth() + "HP");
     }
 }
 
