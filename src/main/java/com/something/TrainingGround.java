@@ -9,5 +9,6 @@ public class TrainingGround {
         warrior.attackEnemy();
         archer.attackEnemy();
         mage.attackEnemy();
+        System.out.println(enemy.isAlive());
     }
 }

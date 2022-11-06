@@ -1,6 +1,6 @@
 package com.something;
 
-public class Enemy {
+public class Enemy implements Mortal{
     private static int health;
 
     public Enemy(int health) {
@@ -18,5 +18,9 @@ public class Enemy {
     public static int takeDamage(int damage){
         health = health - damage;
         return health;
+    }
+
+    public boolean isAlive() {
+        return health > 0;
     }
 }

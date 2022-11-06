@@ -9,7 +9,6 @@ public class Archer extends Hero{
     public void attackEnemy(){
         System.out.println("Лучник " + name + " вистрілив");
         Enemy.takeDamage(damage);
-        System.out.println("У ворога залишилось " + Enemy.getHealth() + "HP");
     }
 }
 

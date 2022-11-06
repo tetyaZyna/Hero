@@ -9,7 +9,6 @@ public class Mage extends Hero{
     public void attackEnemy(){
         System.out.println("Маг " + name + " кастонув фаєрбол");
         Enemy.takeDamage(damage);
-        System.out.println("У ворога залишилось " + Enemy.getHealth() + "HP");
     }
 }
 

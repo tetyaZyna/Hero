@@ -9,6 +9,5 @@ public class Warrior extends Hero{
     public void attackEnemy(){
         System.out.println("Мечник " + name + " атакував");
         Enemy.takeDamage(damage);
-        System.out.println("У ворога залишилось " + Enemy.getHealth() + "HP");
     }
 }
