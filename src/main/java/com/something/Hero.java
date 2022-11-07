@@ -9,7 +9,7 @@ abstract class Hero {
 
     public String getName() {
         return name;
-    }//Зачем сеттер
+    }
 
     public abstract void attackEnemy();
 
